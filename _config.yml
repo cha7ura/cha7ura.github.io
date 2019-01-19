@@ -1,0 +1,41 @@
+# Theme
+remote_theme: 'epidrome/cover-card'
+
+# Title and tag line
+title: 'Chatura Attidiya'
+description: 'A Man who travels the world eating noodles'
+
+# Images
+avatar: 'avatar.jpg'
+background: 'background.jpg'
+favicon: 'favicon.ico'
+
+# Online profiles
+#dribbble: ''
+facebook: 'ChaturaAttidiya'
+twitter: 'CBee94'
+linkedin: 'chaturaattidiya'
+instagram: 'chatura624'
+#pinterest: ''
+#youtube: ''
+github-user: 'cha7ura'
+#gitlab-user: ''
+#codepen: ''
+#steam: ''
+#soundcloud: ''
+#lastfm: ''
+#stack-overflow: ''
+#reddit: ''
+#medium:  ''
+#tumblr: ''
+#weibo: ''
+#vk: ''
+#blog_url: ''
+email: 'cbattidiya@gmail.com'
+#cv: 'https://drive.google.com/open?id=1V7PnHsOobF9FZY78QFWwVul4F1yiigaJ'
+#messenger: ''
+
+
+# Advanced settings
+plugins:
+  - jekyll-remote-theme
