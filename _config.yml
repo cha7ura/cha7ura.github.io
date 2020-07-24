@@ -1,0 +1,42 @@
+#a Theme
+remote_theme: 'epidrome/cover-card'
+
+# Title and tag line
+title: 'Jude Shamira'
+description: 'A Man who travels the world eating noodles'
+
+
+# Images
+avatar: 'avatar.jpg'
+background: 'background.jpg'
+favicon: 'favicon.ico'
+
+# Online profiles
+#dribbble: ''
+facebook: 'Jude.Shamira'
+twitter: 'Shamiraattidiya'
+linkedin: 'Jude-Shamira'
+#instagram: 'shamira_96a'
+#pinterest: ''
+#youtube: ''
+github-user: 'JudeShamira'
+#gitlab-user: ''
+#codepen: ''
+#steam: ''
+#soundcloud: ''
+#lastfm: ''
+#stack-overflow: ''
+#reddit: ''
+#medium:  ''
+#tumblr: ''
+#weibo: ''
+#vk: ''
+#blog_url: 'https://drive.google.com/file/d/1FkBC0pNEVztsg8pwZSYSXMHASlxKNnbD/view?usp=drivesdk'
+email: 'shamiraattidiya@gmail.com'
+
+#messenger: ''
+
+
+# Advanced settings
+plugins:
+  - jekyll-remote-theme
