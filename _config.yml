@@ -152,7 +152,7 @@ social-links:
 
   - name: blog_url
     url-pattern: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view?usp=sharing'
-    icon-class: fas fa-2x fa-blog
+    icon-class: far fa-2x fa-address-card
 
   - name: email
     url-scheme: 'mailto:'
