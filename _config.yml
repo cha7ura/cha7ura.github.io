@@ -31,11 +31,11 @@ github-user: 'mygithub'
 #tumblr: 'mytumblr'
 #weibo: 'myweibo'
 #vk: 'myvk'
-resume: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view'
+resume: 'myresume'
 email: 'cbattidiya@gmail.com'
 #messenger: 'myfbchat'
 
-social-links-order: [github-user, facebook, twitter, instagram, linkedin,  blog_url, email]
+social-links-order: [github-user, facebook, twitter, instagram, linkedin,  resume, email]
 
 # Advanced settings
 plugins:
