@@ -31,7 +31,7 @@ github-user: 'mygithub'
 #tumblr: 'mytumblr'
 #weibo: 'myweibo'
 #vk: 'myvk'
-blog_url: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view?usp=sharing'
+resume: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view'
 email: 'cbattidiya@gmail.com'
 #messenger: 'myfbchat'
 
@@ -150,8 +150,8 @@ social-links:
   - name: quora
     url-pattern: www.quora.com/profile/__USERNAME__
 
-  - name: blog_url
-    url-pattern: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view?usp=sharing'
+  - name: resume
+    url-pattern: 'https://drive.google.com/file/d/1w-2HqNTAbxLeA9FWHZ69ql3S2lrGmVJX/view'
     icon-class: far fa-2x fa-address-card
 
   - name: email
