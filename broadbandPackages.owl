@@ -1,0 +1,1340 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.broadbandpackages.com#"
+     xml:base="http://www.broadbandpackages.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.broadbandpackages.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.broadbandpackages.com#hasBroadbandPackage -->
+
+    <owl:ObjectProperty rdf:about="http://www.broadbandpackages.com#hasBroadbandPackage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+        <rdfs:domain rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+        <rdfs:range rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.broadbandpackages.com#hasConnectionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.broadbandpackages.com#hasConnectionType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:range rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.broadbandpackages.com#hasPackageType -->
+
+    <owl:ObjectProperty rdf:about="http://www.broadbandpackages.com#hasPackageType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:range rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.broadbandpackages.com#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.broadbandpackages.com#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.broadbandpackages.com#ADSL -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#ADSL">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AdslUnlimited2 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AdslUnlimited2">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AdslUnlimited4 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AdslUnlimited4">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AdslUnlimited8 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AdslUnlimited8">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyBeat -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyBeat">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyBlaze -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyBlaze">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyDelight -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyDelight">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyFlix -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyFlix">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyGlam -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyGlam">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyJoy -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyJoy">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnySpike -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnySpike">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyStorm -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyStorm">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyTide -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyTide">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#AnyXtreme -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#AnyXtreme">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#Anytime -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#Anytime">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#BroadbandPackage -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#BroadbandPackage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#ConnectionType -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#ConnectionType"/>
+    
+
+
+    <!-- http://www.broadbandpackages.com#Entree -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#Entree">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Anytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#Fibre -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#Fibre">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#Fibre1Gbps -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#Fibre1Gbps">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#FibreUnlimited10 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#FibreUnlimited10">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#FibreUnlimited25 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#FibreUnlimited25">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#FibreUnlimited50 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#FibreUnlimited50">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#FibreUnlimitedFlash10 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#FibreUnlimitedFlash10">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#FibreUnlimitedFlash25 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#FibreUnlimitedFlash25">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#HigherEducation1 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#HigherEducation1">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#HigherEducation2 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#HigherEducation2">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#LteUnlimited2 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#LteUnlimited2">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#LteUnlimited4 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#LteUnlimited4">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#LteUnlimited8 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#LteUnlimited8">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#PackageType -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#PackageType"/>
+    
+
+
+    <!-- http://www.broadbandpackages.com#TimeBased -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#TimeBased">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#Unlimited -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#Unlimited">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#PackageType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#UnlimitedLteFlash10 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#UnlimitedLteFlash10">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#UnlimitedLteFlash5 -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#UnlimitedLteFlash5">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Unlimited"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebBooster -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebBooster">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebChamp -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebChamp">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebFamilyActive -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebFamilyActive">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebFamilyPlus -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebFamilyPlus">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebFamilyXtra -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebFamilyXtra">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebInspire -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebInspire">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebLife -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebLife">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebLite -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebLite">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebMaster -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebMaster">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebPal -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebPal">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebPremier -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebPremier">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebPro -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebPro">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#WebStarter -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#WebStarter">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#BroadbandPackage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#ADSL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasConnectionType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#4G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.broadbandpackages.com#hasPackageType"/>
+                <owl:someValuesFrom rdf:resource="http://www.broadbandpackages.com#TimeBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.broadbandpackages.com#4G -->
+
+    <owl:Class rdf:about="http://www.broadbandpackages.com#4G">
+        <rdfs:subClassOf rdf:resource="http://www.broadbandpackages.com#ConnectionType"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#ADSL"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#Fibre"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#Fibre1Gbps"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#4G"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AdslUnlimited2"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AdslUnlimited4"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AdslUnlimited8"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyBeat"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyBlaze"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyDelight"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyFlix"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyGlam"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyJoy"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnySpike"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyStorm"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyTide"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#AnyXtreme"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#Entree"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#FibreUnlimited10"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#FibreUnlimited25"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#FibreUnlimited50"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#FibreUnlimitedFlash10"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#FibreUnlimitedFlash25"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#HigherEducation1"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#HigherEducation2"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#LteUnlimited2"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#LteUnlimited4"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#LteUnlimited8"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#UnlimitedLteFlash10"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#UnlimitedLteFlash5"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebBooster"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebChamp"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebFamilyActive"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebFamilyPlus"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebFamilyXtra"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebInspire"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebLife"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebLite"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebMaster"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebPal"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebPremier"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebPro"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#WebStarter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#Anytime"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#TimeBased"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#Unlimited"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#BroadbandPackage"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#ConnectionType"/>
+            <rdf:Description rdf:about="http://www.broadbandpackages.com#PackageType"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
